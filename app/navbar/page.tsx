@@ -1,7 +1,7 @@
 import styles from "./Navbar.module.css";
 export default function Navbar() {
   return (
-    <nav className="flex justify-around p-10 text-[2rem] bg-[#2a84d6]">
+    <nav className="flex justify-around p-10 text-[2rem] bg-[#2a84d6] h-[10vh]">
       <div className="flex w-8/12">
         <div className="flex w-3/5">
           <a className="font-[700]" href="/">
