@@ -21,14 +21,5 @@ export default function Navbar() {
         </div>
       </div>
     </nav>
-    /*<nav className="flex flex-col items-end pr-16 pt-16">
-      <div className="font-[700] text-[4rem] text-[#544648] pb-[5rem]">
-        Durlabh Codes
-      </div>
-      <div className={styles["nav-items"]}>Skills</div>
-      <div className={styles["nav-items"]}>Work</div>
-      <div className={styles["nav-items"]}>About</div>
-      <div className={styles["nav-items"]}>Contact</div>
-    </nav>*/
   );
 }
