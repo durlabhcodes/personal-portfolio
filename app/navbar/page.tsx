@@ -17,8 +17,8 @@ export default function Navbar() {
           >
             Blog
           </Link>
-          <Link href="/about" className="w-1/3">
-            About
+          <Link href="/portfolio" className="w-1/3">
+            Portfolio
           </Link>
           <Link className="w-1/3" href="/contact">
             Contact
