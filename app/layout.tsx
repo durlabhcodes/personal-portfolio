@@ -2,6 +2,7 @@ import "./globals.css";
 import { Inter, Ubuntu } from "next/font/google";
 import Navbar from "@/app/navbar/page";
 import { NextFont } from "next/dist/compiled/@next/font";
+import Footer from "@/app/footer/page";
 
 const inter = Inter({ subsets: ["latin"] });
 const ubuntu: NextFont = Ubuntu({
@@ -21,7 +22,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={ubuntu.className}>{children}</body>
+      <body className={ubuntu.className}>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

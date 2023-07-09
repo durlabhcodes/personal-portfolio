@@ -7,9 +7,7 @@ export default function Home() {
   // return <Navbar />;
   return (
     <div className="flex flex-col">
-      <Navbar />
       <Landing />
-      <Footer />
     </div>
   );
 }
