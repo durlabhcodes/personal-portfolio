@@ -5,11 +5,11 @@ export default function Navbar() {
     <nav className="flex justify-around h-[10vh] text-[2rem] /*bg-[#2a84d6]*/ shadow-2xl items-center">
       <div className="flex w-8/12">
         <div className="flex w-3/5">
-          <Link className="font-[700]" href="/">
-            <span className="text-blue-400">Durlabh</span> Codes
+          <Link className="font-[700] font-Caprasimo text-5xl" href="/">
+            <span className="text-blue-400 ">Durlabh</span> Codes
           </Link>
         </div>
-        <div className="flex w-2/5 text-center">
+        <div className="flex w-2/5 text-center items-center">
           <Link
             className="w-1/3"
             href="https://durlabhsharma.com/"

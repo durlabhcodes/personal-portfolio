@@ -1,15 +1,18 @@
 import "./globals.css";
-import { Inter, Ubuntu } from "next/font/google";
+import { Inter, Martian_Mono, Nunito, Ubuntu } from "next/font/google";
 import Navbar from "@/app/navbar/page";
 import { NextFont } from "next/dist/compiled/@next/font";
 import Footer from "@/app/footer/page";
 
-const inter = Inter({ subsets: ["latin"] });
 const ubuntu: NextFont = Ubuntu({
   weight: ["700", "400", "300"],
   subsets: ["latin"],
 });
 
+const nunito: NextFont = Nunito({
+  weight: ["700", "400", "300"],
+  subsets: ["latin"],
+});
 export const metadata = {
   title: "Durlabh Codes - An attempt was made",
   description: "Durlabh Sharma's attempt at appearing cool in coding community",
@@ -22,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={ubuntu.className}>
+      <body className={nunito.className}>
         <Navbar />
         {children}
         <Footer />

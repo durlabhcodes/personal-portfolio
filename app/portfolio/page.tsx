@@ -3,7 +3,7 @@ import projects from "./Projects.json";
 import ProjectCard from "@/app/portfolio/ProjectCard/page";
 export default function Portfolio() {
   return (
-    <section className="portfolio data-height flex flex-col">
+    <section className="portfolio data-height flex flex-col mx-6">
       <div className={styles["portfolio-label"]}>
         Glad To See You Interested In
       </div>
