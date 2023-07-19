@@ -6,4 +6,12 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     overflow-y: auto;
+    width: 60vw;
+    margin: 0 auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+
+.portfolio-projects::-webkit-scrollbar {
+    display: none;
 }
