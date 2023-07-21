@@ -25,3 +25,13 @@ body {
 .data-height {
     @apply h-[80vh];
 }
+
+@layer components {
+    .portfolio {
+        -ms-overflow-style: none;  /* IE and Edge */
+        -scrollbar-width: none;
+    }
+    .portfolio::-webkit-scrollbar {
+        -display: none;
+    }
+}

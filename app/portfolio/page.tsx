@@ -3,12 +3,12 @@ import projects from "./Projects.json";
 import ProjectCard from "@/app/portfolio/ProjectCard/page";
 export default function Portfolio() {
   return (
-    <section className="portfolio data-height flex flex-col mx-6">
-      <div className={styles["portfolio-label"]}>
+    <section className="portfolio data-height flex flex-col mx-6 py-20 overflow-y-auto">
+      {/* <div className={styles["portfolio-label"]}>
         Glad To See You Interested In
-      </div>
+      </div>*/}
       <div className={[styles["portfolio-label"], "text-blue-400"].join(" ")}>
-        My Work
+        Here&apos;s Some of My Work
       </div>
       <div className={styles["portfolio-projects"]}>
         {projects.map((project, i) => (
