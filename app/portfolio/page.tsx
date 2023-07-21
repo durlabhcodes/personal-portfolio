@@ -7,7 +7,7 @@ export default function Portfolio() {
       {/* <div className={styles["portfolio-label"]}>
         Glad To See You Interested In
       </div>*/}
-      <div className={[styles["portfolio-label"], "text-blue-400"].join(" ")}>
+      <div className={[styles["portfolio-label"], "text-[#303940]"].join(" ")}>
         Here&apos;s Some of My Work
       </div>
       <div className={styles["portfolio-projects"]}>
@@ -18,6 +18,7 @@ export default function Portfolio() {
             imgUrl={project.image}
             descThumb={project.desc_thumb}
             descDetailed={project.desc_detailed}
+            tech={project.tech}
           />
         ))}
       </div>
