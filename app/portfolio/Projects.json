@@ -34,5 +34,50 @@
     "tech": [
       "Java", "Html", "CSS", "Next.js"
     ]
+  },
+  {
+    "name": "Project 4",
+    "image": "abc",
+    "desc_thumb": "Project Description For Thumbnail",
+    "desc_detailed": "Detailed Description",
+    "tech": [
+      "Java", "Html", "CSS", "Next.js"
+    ]
+  },
+  {
+    "name": "Project 4",
+    "image": "abc",
+    "desc_thumb": "Project Description For Thumbnail",
+    "desc_detailed": "Detailed Description",
+    "tech": [
+      "Java", "Html", "CSS", "Next.js"
+    ]
+  },
+  {
+    "name": "Project 4",
+    "image": "abc",
+    "desc_thumb": "Project Description For Thumbnail",
+    "desc_detailed": "Detailed Description",
+    "tech": [
+      "Java", "Html", "CSS", "Next.js"
+    ]
+  },
+  {
+    "name": "Project 4",
+    "image": "abc",
+    "desc_thumb": "Project Description For Thumbnail",
+    "desc_detailed": "Detailed Description",
+    "tech": [
+      "Java", "Html", "CSS", "Next.js"
+    ]
+  },
+  {
+    "name": "Project 4",
+    "image": "abc",
+    "desc_thumb": "Project Description For Thumbnail",
+    "desc_detailed": "Detailed Description",
+    "tech": [
+      "Java", "Html", "CSS", "Next.js"
+    ]
   }
 ]
