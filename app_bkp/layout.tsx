@@ -1,7 +1,8 @@
 import "./globals.css";
 import { Inter, Martian_Mono, Nunito, Ubuntu } from "next/font/google";
+import Navbar from "@/app_bkp/navbar/page";
 import { NextFont } from "next/dist/compiled/@next/font";
-import Navbar from "@/app/navbar/page";
+import Footer from "@/app_bkp/footer/page";
 
 const ubuntu: NextFont = Ubuntu({
   weight: ["700", "400", "300"],
@@ -23,10 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning={true}>
+    <html lang="en">
       <body className={nunito.className}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -1,6 +1,6 @@
 import styles from "./Portfolio.module.css";
 import projects from "./Projects.json";
-import ProjectCard from "@/app/portfolio/ProjectCard/page";
+import ProjectCard from "@/app_bkp/portfolio/ProjectCard/page";
 export default function Portfolio() {
   return (
     <section className="portfolio data-height flex flex-col mx-6 py-20 overflow-y-auto">

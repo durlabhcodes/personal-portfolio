@@ -1,0 +1,7 @@
+.nav-items {
+    @apply text-[#8B5B64] text-[3rem] leading-[6rem];
+}
+
+.icon {
+    @apply h-[3vh] mx-2 text-[#60a5f9]
+}

@@ -1,13 +1,5 @@
-import Image from "next/image";
-import Navbar from "@/app/navbar/page";
-import Landing from "@/app/landing/page";
-import Footer from "@/app/footer/page";
+import Hero from "@/app/hero/page";
 
 export default function Home() {
-  // return <Navbar />;
-  return (
-    <div className="flex flex-col">
-      <Landing />
-    </div>
-  );
+  return <Hero />;
 }
