@@ -8,11 +8,11 @@ interface ServiceCardProps {
 }
 export default function ServiceCard(props: ServiceCardProps) {
   return (
-    <div className="service-card max-w-[100px]">
-      <div className="icon">
+    <div className="service-card max-w-[500px] border border-solid p-5 drop-shadow-lg m-5">
+      <div className="icon w-[64px] my-2">
         <FontAwesomeIcon icon={props.icon} />
       </div>
-      <div className="title">{props.title}</div>
+      <div className="title my-4">{props.title}</div>
       <div className="detail">{props.desc}</div>
     </div>
   );
