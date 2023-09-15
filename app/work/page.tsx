@@ -1,6 +1,6 @@
-import ServiceCard from "@/app/services/service-card/page";
+import ServiceCard from "@/app/services/service-card/ServiceCard";
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
-import WorkCard from "@/app/work/work-card/page";
+import WorkCard from "@/app/work/work-card/WorkProps";
 
 export default function Work() {
   const projects = [
