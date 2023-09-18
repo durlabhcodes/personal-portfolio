@@ -6,7 +6,7 @@ interface BlogCardProps {
 }
 export default function BlogCard(props: BlogCardProps) {
   return (
-    <article className="blog-post rounded-lg drop-shadow-2xl cursor-pointer">
+    <article className="blog-post border border-solid border-black rounded-lg drop-shadow-2xl cursor-pointer">
       <div
         className="blog-post-image min-h-[300px] bg-center bg-cover"
         style={{ backgroundImage: `url(${props.image})` }}
