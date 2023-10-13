@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <div className="flex flex-col">
       <div className="hero-section bg-[url('/paper-bg.jpg')] bg-cover flex">
-        <div className="hero-content py-[15rem] px-[6rem]">
+        <div className="hero-content py-[15rem] px-[6rem] w-full">
           <p className="text-[4rem] block">Hey all. Great to see you here</p>
           <p>
             I&apos;m a Web Developer with more than 10 years of experience.

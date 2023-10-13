@@ -30,12 +30,10 @@ export default function Work() {
     },
   ];
 
-  // [repeat(3, minmax(400px, 400px))]
-  // grid-cols-[repeat(auto-fit,minmax(400px,500px))]
   return (
-    <section className="work-section flex flex-col items-center py-[64px]">
-      <div className="py-5">My Work & Portfolio</div>
-      <div>
+    <section className="work-section flex flex-col items-center py-[64px] bg-gray-50">
+      <div className="py-5 font-bold text-3xl">My Work & Portfolio</div>
+      <div className="text-[#8493a6]">
         Obviously I&apos;m a Web Designer. Experienced with all stages of the
         development cycle for dynamic web projects.
       </div>

@@ -25,12 +25,12 @@ export default function Services() {
   ];
   return (
     <section className="service-section flex flex-col items-center py-[64px]">
-      <div className="py-5">Awesome Service</div>
-      <div>
+      <div className="py-5 font-bold text-3xl">Awesome Service</div>
+      <div className="text-[#8493a6]">
         Obviously I&apos;m a Web Designer. Experienced with all stages of the
         development cycle for dynamic web projects.
       </div>
-      <div className="service-grid grid grid-cols-3 gap-x-24 my-5">
+      <div className="service-grid grid grid-cols-2 gap-x-24 my-5">
         {services.map((service) => (
           <ServiceCard
             key={service.title}
