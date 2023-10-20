@@ -31,7 +31,7 @@ export default function Work() {
   ];
 
   return (
-    <section className="work-section flex flex-col items-center py-[64px] bg-gray-50">
+    <section className="work-section flex flex-col items-center py-[64px] bg-gray-200">
       <div className="py-5 font-bold text-3xl">My Work & Portfolio</div>
       <div className="text-[#8493a6]">
         Obviously I&apos;m a Web Designer. Experienced with all stages of the
@@ -49,7 +49,7 @@ export default function Work() {
         ))}
       </div>
 
-      <div className="see-more-services px-8 py-4 bg-blue-500 text-white rounded-2xl font-bold">
+      <div className="see-more-services px-8 py-4 bg-[#4d76d1] text-white rounded-2xl font-bold">
         <span>See More &gt;</span>
       </div>
     </section>

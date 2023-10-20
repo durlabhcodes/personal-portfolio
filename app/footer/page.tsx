@@ -28,10 +28,14 @@ export default function Footer() {
     },
   ];
   return (
-    <footer className="h-[10vh] bg-[#60a5f9] flex justify-center items-center">
+    <footer className="h-[10vh] bg-[#4d76d1] flex justify-center items-center">
       {socials.map((social, index) => (
         <a href={social.link} key={index}>
-          <FontAwesomeIcon icon={social.icon} className={styles.icon} />
+          <FontAwesomeIcon
+            icon={social.icon}
+            className={styles.icon}
+            color="white"
+          />
         </a>
       ))}
     </footer>
