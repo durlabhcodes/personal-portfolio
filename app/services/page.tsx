@@ -30,7 +30,7 @@ export default function Services() {
         Obviously I&apos;m a Web Designer. Experienced with all stages of the
         development cycle for dynamic web projects.
       </div>
-      <div className="service-grid grid grid-cols-2 gap-x-24 my-5">
+      <div className="service-grid grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-x-1 my-5 w-[70vw]">
         {services.map((service) => (
           <ServiceCard
             key={service.title}

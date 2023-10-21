@@ -28,7 +28,11 @@ export default function Navbar() {
           <FontAwesomeIcon icon={faBars} color="#4d76d1" width="24px" />
         </div>
       </div>
-      <div className="navbar-small-items lg:hidden flex flex-col items-center">
+      <div
+        className={`navbar-small-items  items-center  ${
+          showNav ? "flex flex-col" : "hidden"
+        }`}
+      >
         <div>Services</div>
         <div>Blog</div>
         <div>Contact</div>

@@ -30,7 +30,7 @@ export default function Blog() {
         Obviously I&apos;m a Web Designer. Experienced with all stages of the
         development cycle for dynamic web projects.
       </div>
-      <div className="blog-posts grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-24 my-5 w-[70vw]">
+      <div className="blog-posts grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-24 my-5 w-[70vw]">
         {articles.map((article) => (
           <BlogCard
             key={article.title}
