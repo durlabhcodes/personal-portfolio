@@ -34,8 +34,7 @@ export default function Work() {
     <section className="work-section flex flex-col items-center py-[64px] bg-gray-200">
       <div className="py-5 font-bold text-3xl">My Work & Portfolio</div>
       <div className="text-[#8493a6]">
-        Obviously I&apos;m a Web Designer. Experienced with all stages of the
-        development cycle for dynamic web projects.
+        Here&apos;s the collection of some my best and favourite works
       </div>
       <div className="work-grid grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-24 my-5 w-[70vw]">
         {projects.map((project) => (
