@@ -2,6 +2,7 @@ import "./globals.css";
 import { Inter, Martian_Mono, Nunito, Ubuntu } from "next/font/google";
 import { NextFont } from "next/dist/compiled/@next/font";
 import Navbar from "@/app/navbar/page";
+import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 
 const ubuntu: NextFont = Ubuntu({
   weight: ["700", "400", "300"],
@@ -16,7 +17,10 @@ export const metadata = {
   title: "Durlabh Codes - An attempt was made",
   description: "Durlabh Sharma's attempt at appearing cool in coding community",
 };
-
+const client = new ApolloClient({
+  uri: "https://gql.hashnode.com",
+  cache: new InMemoryCache(),
+});
 export default function RootLayout({
   children,
 }: {
@@ -25,8 +29,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <body className={nunito.className}>
-        <Navbar />
-        {children}
+        <ApolloProvider client={client}>
+          <Navbar />
+          {children}
+        </ApolloProvider>
       </body>
     </html>
   );
