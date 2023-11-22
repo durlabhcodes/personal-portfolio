@@ -70,7 +70,6 @@ export default function Blog() {
   let posts = user.publications.edges[0].node.posts.edges.flatMap(
     (edge) => edge.node
   );
-  console.log(posts);
 
   return (
     <section className="blog flex flex-col items-center">
