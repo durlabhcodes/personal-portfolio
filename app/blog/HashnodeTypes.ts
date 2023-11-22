@@ -22,8 +22,14 @@ interface PostEdge {
   node: PostNode;
 }
 
-interface PostNode {
+export interface PostNode {
   title: string;
   url: string;
+  brief: string;
   publishedAt: string;
+  coverImage: CoverImage;
+}
+
+interface CoverImage {
+  url: string;
 }

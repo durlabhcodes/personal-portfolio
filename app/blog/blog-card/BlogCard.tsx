@@ -15,7 +15,7 @@ export default function BlogCard(props: BlogCardProps) {
       ></div>
       <div className="blog-post-details p-4">
         <div className="blog-post-title font-bold pb-2">{props.title}</div>
-        <div className="blog-post-desc text-[#8493a6]">{props.desc}</div>
+        {/*<div className="blog-post-desc text-[#8493a6]">{props.desc}</div>*/}
         <div className="blog-post-footer flex flex-row justify-between mt-3">
           <div className="blog-post-time text-[#8493a6]">
             <span className="inline-block mr-2">

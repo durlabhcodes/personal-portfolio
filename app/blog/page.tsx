@@ -1,7 +1,7 @@
 import BlogCard from "@/app/blog/blog-card/BlogCard";
 import { ApolloQueryResult, gql } from "@apollo/client";
 import { getClient } from "@/app/lib/apollo-client";
-import User from "@/app/blog/HashnodeTypes";
+import User, { PostNode } from "@/app/blog/HashnodeTypes";
 import { use } from "react";
 import { json } from "stream/consumers";
 
@@ -37,6 +37,7 @@ export default function Blog() {
                   node {
                     title
                     url
+                    brief
                     coverImage {
                       url
                     }
@@ -66,11 +67,10 @@ export default function Blog() {
   }
 
   let user = use<User>(getPosts().then((result) => result.user));
-  console.log(
-    user.publications.edges.map((edge) =>
-      edge.node.posts.edges.map((edge) => edge.node)
-    )
+  let posts = user.publications.edges[0].node.posts.edges.flatMap(
+    (edge) => edge.node
   );
+  console.log(posts);
 
   return (
     <section className="blog flex flex-col items-center">
@@ -82,13 +82,13 @@ export default function Blog() {
         development cycle for dynamic web projects.
       </div>
       <div className="blog-posts grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-24 my-5 w-[70vw]">
-        {articles.map((article) => (
+        {posts.map((article) => (
           <BlogCard
             key={article.title}
-            image={article.image}
+            image={article.coverImage ? article.coverImage.url : ""}
             title={article.title}
-            desc={article.desc}
-            timestamp={article.timestamp}
+            desc={article.brief}
+            timestamp={article.publishedAt}
           />
         ))}
       </div>
