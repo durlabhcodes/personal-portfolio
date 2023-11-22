@@ -1,8 +1,11 @@
 import BlogCard from "@/app/blog/blog-card/BlogCard";
-import { gql, useQuery } from "@apollo/client";
+import { ApolloQueryResult, gql } from "@apollo/client";
 import { getClient } from "@/app/lib/apollo-client";
+import User from "@/app/blog/HashnodeTypes";
+import { use } from "react";
+import { json } from "stream/consumers";
 
-export default async function Blog() {
+export default function Blog() {
   const articles = [
     {
       title: "Blog Title",
@@ -48,18 +51,27 @@ export default async function Blog() {
     }
   `;
 
-  const { data } = await getClient().query({
-    query: GET_USER_ARTICLES,
-    context: {
-      fetchOptions: {
-        next: {
-          revalidate: 5,
+  async function getPosts() {
+    const { data } = await getClient().query({
+      query: GET_USER_ARTICLES,
+      context: {
+        fetchOptions: {
+          next: {
+            revalidate: 5,
+          },
         },
       },
-    },
-  });
-  //console.log(data.user.publications.edges);
-  data.user.publications.edges.forEach((edge) => console.log(edge.node));
+    });
+    return data;
+  }
+
+  let user = use<User>(getPosts().then((result) => result.user));
+  console.log(
+    user.publications.edges.map((edge) =>
+      edge.node.posts.edges.map((edge) => edge.node)
+    )
+  );
+
   return (
     <section className="blog flex flex-col items-center">
       <div className="blog-section-title py-5 font-bold text-3xl">
