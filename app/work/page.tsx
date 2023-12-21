@@ -29,7 +29,6 @@ export default function Work() {
       image: "/project.jpeg",
     },
   ];
-
   return (
     <section className="work-section flex flex-col items-center py-[64px] bg-gray-200">
       <div className="py-5 font-bold text-3xl">My Work & Portfolio</div>
@@ -37,7 +36,7 @@ export default function Work() {
         Here&apos;s the collection of some my best and favourite works
       </div>
       <div className="work-grid grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-24 my-5 w-[70vw]">
-        {projects.map((project) => (
+        {projects.slice(0, 3).map((project) => (
           <WorkCard
             key={project.title}
             image={project.image}

@@ -6,26 +6,6 @@ import { use } from "react";
 import { json } from "stream/consumers";
 
 export default function Blog() {
-  const articles = [
-    {
-      title: "Blog Title",
-      desc: "Hello I am a badass blog article description with a lots and lots of content that'll overflow to next line",
-      timestamp: "24th Aug",
-      image: "/project.jpeg",
-    },
-    {
-      title: "Blog Title",
-      desc: "Hello I am a badass blog article description with a lots and lots of content that'll overflow to next line",
-      timestamp: "24th Aug",
-      image: "/project.jpeg",
-    },
-    {
-      title: "Blog Title",
-      desc: "Hello I am a badass blog article description with a lots and lots of content that'll overflow to next line",
-      timestamp: "24th Aug",
-      image: "/project.jpeg",
-    },
-  ];
   const GET_USER_ARTICLES = gql`
     query {
       user(username: "durlabhcodes") {
@@ -67,9 +47,9 @@ export default function Blog() {
   }
 
   let user = use<User>(getPosts().then((result) => result.user));
-  let posts = user.publications.edges[0].node.posts.edges.flatMap(
-    (edge) => edge.node
-  );
+  let posts = user.publications.edges[0].node.posts.edges
+    .flatMap((edge) => edge.node)
+    .slice(0, 6);
 
   return (
     <section className="blog flex flex-col items-center">
@@ -88,6 +68,7 @@ export default function Blog() {
             title={article.title}
             desc={article.brief}
             timestamp={article.publishedAt}
+            url={article.url}
           />
         ))}
       </div>

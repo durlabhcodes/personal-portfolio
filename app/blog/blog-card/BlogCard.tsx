@@ -5,6 +5,7 @@ interface BlogCardProps {
   title: string;
   desc: string;
   timestamp: string;
+  url: string;
 }
 export default function BlogCard(props: BlogCardProps) {
   const date: Date = new Date(Date.parse(props.timestamp));
@@ -29,7 +30,9 @@ export default function BlogCard(props: BlogCardProps) {
             {dateStr}
           </div>
           <div className="blog-post-read-more text-[#8493a6]">
-            Read More &gt;
+            <a href={props.url} target="_blank" rel="noopener noreferrer">
+              Read More &gt;
+            </a>
           </div>
         </div>
       </div>
