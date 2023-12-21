@@ -30,7 +30,10 @@ export default function Work() {
     },
   ];
   return (
-    <section className="work-section flex flex-col items-center py-[64px] bg-gray-200">
+    <section
+      className="work-section flex flex-col items-center py-[64px] bg-gray-200"
+      id="work"
+    >
       <div className="py-5 font-bold text-3xl">My Work & Portfolio</div>
       <div className="text-[#8493a6]">
         Here&apos;s the collection of some my best and favourite works

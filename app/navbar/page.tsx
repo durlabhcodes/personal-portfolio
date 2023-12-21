@@ -17,9 +17,15 @@ export default function Navbar() {
         <div className="cursor-pointer">Durlabh Sharma</div>
         <div className="hidden lg:flex nav-items-list grow justify-end">
           {/*<span className={styles["nav-items"]}>Home</span>*/}
-          <span className={styles["nav-items"]}>Services</span>
-          <span className={styles["nav-items"]}>Blog</span>
-          <span className={styles["nav-items"]}>Contact</span>
+          <span className={styles["nav-items"]}>
+            <a href="#services">Services</a>
+          </span>
+          <span className={styles["nav-items"]}>
+            <a href="#work">Work</a>
+          </span>
+          <span className={styles["nav-items"]}>
+            <a href="#blog-posts">Blog</a>
+          </span>
         </div>
         <div
           className="burger-nav flex lg:hidden grow justify-end"
@@ -34,8 +40,8 @@ export default function Navbar() {
         }`}
       >
         <div>Services</div>
+        <div>Work</div>
         <div>Blog</div>
-        <div>Contact</div>
       </div>
     </div>
   );

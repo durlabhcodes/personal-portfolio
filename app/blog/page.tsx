@@ -52,7 +52,7 @@ export default function Blog() {
     .slice(0, 6);
 
   return (
-    <section className="blog flex flex-col items-center">
+    <section className="blog flex flex-col items-center" id="blog-posts">
       <div className="blog-section-title py-5 font-bold text-3xl">
         Latest Blog & Articles
       </div>

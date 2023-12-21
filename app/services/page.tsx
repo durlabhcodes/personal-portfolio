@@ -35,7 +35,10 @@ export default function Services() {
     },
   ];
   return (
-    <section className="service-section flex flex-col items-center py-[64px]">
+    <section
+      className="service-section flex flex-col items-center py-[64px]"
+      id="services"
+    >
       <div className="py-5 font-bold text-3xl">Awesome Service</div>
       <div className="text-[#8493a6]  px-2">
         I&apos;m a software developer experienced with all stages of the
