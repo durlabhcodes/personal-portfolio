@@ -15,27 +15,27 @@ export default function BlogCard(props: BlogCardProps) {
   console.log(props.timestamp + " converted to => " + dateStr);
   return (
     <article className="blog-post border border-solid border-black rounded-lg drop-shadow-2xl cursor-pointer">
-      <div
-        className="blog-post-image min-h-[300px] bg-center bg-cover rounded-lg"
-        style={{ backgroundImage: `url(${props.image})` }}
-      ></div>
-      <div className="blog-post-details p-4">
-        <div className="blog-post-title font-bold pb-2">{props.title}</div>
-        {/*<div className="blog-post-desc text-[#8493a6]">{props.desc}</div>*/}
-        <div className="blog-post-footer flex flex-row justify-between mt-3">
-          <div className="blog-post-time text-[#8493a6]">
-            <span className="inline-block mr-2">
-              <FontAwesomeIcon icon={faCalendar} height="16px" />
-            </span>
-            {dateStr}
-          </div>
-          <div className="blog-post-read-more text-[#8493a6]">
-            <a href={props.url} target="_blank" rel="noopener noreferrer">
+      <a href={props.url} target="_blank" rel="noopener noreferrer">
+        <div
+          className="blog-post-image min-h-[300px] bg-center bg-cover rounded-lg"
+          style={{ backgroundImage: `url(${props.image})` }}
+        ></div>
+        <div className="blog-post-details p-4">
+          <div className="blog-post-title font-bold pb-2">{props.title}</div>
+          {/*<div className="blog-post-desc text-[#8493a6]">{props.desc}</div>*/}
+          <div className="blog-post-footer flex flex-row justify-between mt-3">
+            <div className="blog-post-time text-[#8493a6]">
+              <span className="inline-block mr-2">
+                <FontAwesomeIcon icon={faCalendar} height="16px" />
+              </span>
+              {dateStr}
+            </div>
+            <div className="blog-post-read-more text-[#8493a6]">
               Read More &gt;
-            </a>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
     </article>
   );
 }
