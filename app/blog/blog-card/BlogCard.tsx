@@ -12,7 +12,6 @@ export default function BlogCard(props: BlogCardProps) {
   const dateStr = `${date.getDate()}/${
     date.getMonth() + 1
   }/${date.getFullYear()}`;
-  console.log(props.timestamp + " converted to => " + dateStr);
   return (
     <article className="blog-post border border-solid border-black rounded-lg drop-shadow-2xl cursor-pointer">
       <a href={props.url} target="_blank" rel="noopener noreferrer">

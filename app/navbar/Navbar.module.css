@@ -1,3 +1,7 @@
 .nav-items {
     @apply mx-2 cursor-pointer;
 }
+
+.nav-items-mobile {
+    @apply py-1 border-b border-black;
+}

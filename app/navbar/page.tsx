@@ -12,7 +12,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="navbar flex flex-col lg:flex-row px-[2rem] lg:px-[20rem] py-[2rem] text-2xl sticky top-0 z-20 bg-white">
+    <div className="navbar flex flex-col lg:flex-row px-[2rem] lg:px-[20rem] py-[2rem] text-2xl sticky top-0 z-20 bg-white shadow-xl">
       <div className="navbar-wrapper flex grow">
         <div className="cursor-pointer">Durlabh Sharma</div>
         <div className="hidden lg:flex nav-items-list grow justify-end">
@@ -39,9 +39,15 @@ export default function Navbar() {
           showNav ? "flex flex-col" : "hidden"
         }`}
       >
-        <div>Services</div>
-        <div>Work</div>
-        <div>Blog</div>
+        <div className={styles["nav-items-mobile"]}>
+          <a href="#services">Services</a>
+        </div>
+        <div className={styles["nav-items-mobile"]}>
+          <a href="#work">Work</a>
+        </div>
+        <div className={styles["nav-items-mobile"]}>
+          <a href="#blog-posts">Blog</a>
+        </div>
       </div>
     </div>
   );
