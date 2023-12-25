@@ -5,25 +5,25 @@ import WorkCard from "@/app/work/work-card/WorkCard";
 export default function Work() {
   const projects = [
     {
-      title: "Web Development",
+      title: "Coming Soon",
       desc: "I write pretty amazing websites that you might love",
       type: "Web",
       image: "/project.jpeg",
     },
     {
-      title: "Web Development",
+      title: "Coming Soon",
       desc: "I write pretty amazing websites that you might love",
       type: "Web",
       image: "/project.jpeg",
     },
     {
-      title: "Web Development",
+      title: "Coming Soon",
       desc: "I write pretty amazing websites that you might love",
       type: "Web",
       image: "/project.jpeg",
     },
     {
-      title: "Web Development",
+      title: "Coming Soon",
       desc: "I write pretty amazing websites that you might love",
       type: "Web",
       image: "/project.jpeg",
